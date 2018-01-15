@@ -8,31 +8,31 @@
   </head>
   <body>
     <main role="main" class="container">
-      <h1>Web Miner</h1>
+      <h1>ゼニ掘り</h1>
       <div class="form-group">
-        <label for="host">Hostname</label>
+        <label for="host">ホスト名</label>
         <input id="host" type="text" class="form-control" placeholder="Hostname" aria-label="Hostname" aria-describedby="basic-addon1">
       </div>
       <div class="form-group">
-        <label for="port">Port number</label>
+        <label for="port">ポート番号</label>
         <input id="port" type="text" class="form-control" placeholder="Port number" aria-label="Port number" aria-describedby="basic-addon1">
       </div>
       <div class="form-group">
-        <label for="username">Username</label>
+        <label for="username">ZNYアドレス/プールのユーザーID</label>
         <input id="username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
       </div>
       <div class="form-group">
-        <label for="password">Password</label>
+        <label for="password">パスワード</label>
         <input id="password" type="text" class="form-control" placeholder="Password">
       </div>
       <div class="form-group">
-        <label for="algo">Algorithm</label>
+        <label for="algo">アルゴ</label>
         <select id="algo" class="form-control">
            <option>yescrypt</option>
         </select>
       </div>
       <div class="form-group">
-        <label for="threads">Threads</label>
+        <label for="threads">スレッド(CPU数)</label>
         <select id="threads" class="form-control">
            <option selected>1</option>
            <option>2</option>
@@ -45,33 +45,33 @@
         </select>
       </div>
       <div class="form-group">
-        <label for="proxy">Proxy server</label>
+        <label for="proxy">プロキシサーバー</label>
         <input id="proxy" type="text" class="form-control" placeholder="wss://miner2.sighash.info/proxy" aria-label="Proxy server" value="wss://miner2.sighash.info/proxy" aria-describedby="basic-addon1">
       </div>
       <div class="form-group">
-        <button id="start" type="button" class="btn btn-primary">Start</button>
-        <button id="stop" type="button" class="btn btn-danger" disabled>Stop</button>
-        <button id="save" type="button" class="btn btn-light">Save</button>
-        <button id="bench" type="button" class="btn btn-light">Benchmark</button>
+        <button id="start" type="button" class="btn btn-primary">スタート！</button>
+        <button id="stop" type="button" class="btn btn-danger" disabled>ストップ</button>
+        <button id="save" type="button" class="btn btn-light">設定値をURLに保存</button>
+        <button id="bench" type="button" class="btn btn-light">ベンチマーク</button>
       </div>
       <div id="meter" class="alert alert-dark" role="alert">
-          Speed: (hashes/s)<br>
+          スピード: (hashes/s)<br>
           Worker 1: <span id="meter1">-.-</span><br>
           Worker 2: <span id="meter2">-.-</span><br>
           Worker 3: <span id="meter3">-.-</span><br>
           Worker 4: <span id="meter4">-.-</span>
       </div>
       <div id="connected" class="status alert alert-info" role="alert" style="display: none">
-          Connected
+          接続中
       </div>
       <div id="disconnected" class="status alert alert-danger" role="alert" style="display: none">
-          Disconnected
+          切断
       </div>
       <div id="message" class="status alert alert-info" role="alert" style="display: none">
-          Got message
+          メッセージ受信
       </div>
       <div id="error" class="status alert alert-danger" role="alert" style="display: none">
-          Error
+          エラー
       </div>
       <button id="yay" type="button" class="btn btn-success" style="display: none">
           yay!!! <span id="yaycount" class="badge badge-light">0</span>
